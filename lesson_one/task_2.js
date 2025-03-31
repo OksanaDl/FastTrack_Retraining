@@ -1,2 +1,2 @@
-const myLastName = 'Dlugosh';
+const myLastName = 'Test';
 console.log(myLastName);
