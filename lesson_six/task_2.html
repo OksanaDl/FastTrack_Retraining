@@ -1,0 +1,26 @@
+<body>
+  <img class="image" src="dog.jpg" id="image">
+  <button onClick="openModal()">Show Image</button>
+
+  <div id="modal" style="display: none; position: fixed; top: 50%; left: 50%; background: white; padding: 20px;">
+    <img id="modalImage">
+    <button onClick="closeModal()">Close</button>
+
+  </div>
+
+  <script>
+    function openModal() {
+      let imgEl = document.getElementById("image");
+      imgEl.scr = "cat.jpg";
+
+      let modalImg = document.getElementById("modalImage");
+      modalImg.scr = imgEl.scr;
+
+      document.getElementById("modal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
