@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Manipulation</title>
+</head>
+
+<body>
+  <script>
+    let mainEl = document.createElement("main");
+    mainEl.classname = "mainClass check item";
+
+    let divEl = document.createElement("div");
+    divEl.id = "myDiv";
+
+    let pEl = document.createElement("p");
+    pEl.textContent = "First paragraph";
+
+    divEl.appendChild(pEl);
+    mainEl.appendChild(divEl);
+
+    document.body.appendChild(mainEl);
+
+  </script>
+
+</body>
+
+</html>
